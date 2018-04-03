@@ -1,0 +1,53 @@
+$lightblue: #ADD8E6;
+$orange : #FFA500;
+
+#link-card-container {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 65px;
+
+    > div {
+        padding: 0 35px;
+    }
+    
+    .link-card, .link-card:visited {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        margin-top: 65px;
+        
+        background-color: $lightblue;
+        border-radius: 40px;
+        box-shadow:0 0 20px $lightblue;
+
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        transition:all 1s linear;
+        text-decoration: none;
+        color: black;
+
+        i {
+            font-size: 70px;
+            padding-bottom: 10px;
+        }
+
+        &.lit {
+            box-shadow:0 0 60px $lightblue;
+            transition:all 1s linear;
+        }
+
+        &:hover { 
+            background-color:$orange;
+            box-shadow:0 0 20px $orange;
+            transition:all 0.2s ease;
+        }
+    }
+}
+
+.link-card-container-outer {
+    border-bottom: 2px solid white;
+}

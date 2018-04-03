@@ -1,0 +1,36 @@
+#link-card-container {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 65px; }
+  #link-card-container > div {
+    padding: 0 35px; }
+  #link-card-container .link-card, #link-card-container .link-card:visited {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 65px;
+    background-color: #ADD8E6;
+    border-radius: 40px;
+    box-shadow: 0 0 20px #ADD8E6;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 1s linear;
+    text-decoration: none;
+    color: black; }
+    #link-card-container .link-card i, #link-card-container .link-card:visited i {
+      font-size: 70px;
+      padding-bottom: 10px; }
+    #link-card-container .link-card.lit, #link-card-container .link-card:visited.lit {
+      box-shadow: 0 0 60px #ADD8E6;
+      transition: all 1s linear; }
+    #link-card-container .link-card:hover, #link-card-container .link-card:visited:hover {
+      background-color: #FFA500;
+      box-shadow: 0 0 20px #FFA500;
+      transition: all 0.2s ease; }
+
+.link-card-container-outer {
+  border-bottom: 2px solid white; }
