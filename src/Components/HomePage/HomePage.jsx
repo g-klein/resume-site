@@ -4,6 +4,7 @@ import { Navigation } from './Navigation.jsx';
 import { Hero } from './Hero.jsx';
 import { LinkCards } from './LinkCards.jsx';
 import { Summary } from './Summary.jsx';
+import { Footer } from './Footer.jsx';
 
 export class HomePage extends Component {
     render() {
@@ -13,6 +14,7 @@ export class HomePage extends Component {
                 <Hero />
                 <LinkCards />
                 <Summary />
+                <Footer />
             </div>
         );
     }

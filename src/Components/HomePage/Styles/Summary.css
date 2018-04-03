@@ -1,6 +1,33 @@
 #summary {
   color: white;
-  margin-top: 60px; }
+  margin: 60px auto;
+  font-family: "Crimson Text", sans-serif;
+  max-width: 585px;
+  position: relative; }
   #summary h2 {
-    text-align: center;
-    font-size: 45px; }
+    text-decoration: underline;
+    font-size: 50px; }
+  #summary p {
+    font-size: 28px; }
+  #summary .backdrop {
+    position: absolute;
+    top: 0px;
+    white-space: pre;
+    color: #3a9fc0;
+    filter: blur(10px);
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */ }
+    #summary .backdrop .orange {
+      color: #664200; }
+    #summary .backdrop .teal {
+      color: teal; }
+
+.summary-outer {
+  border-bottom: 1px solid white;
+  overflow: hidden; }
