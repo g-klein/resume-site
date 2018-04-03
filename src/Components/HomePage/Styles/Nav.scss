@@ -1,0 +1,49 @@
+$nav-height: 45px;
+$nav-height-scrolled: 40px;
+$hover-blue: #ADD8E6;
+$hover-link-transition: color 0.4s ease;
+$scroll-transition: all 0.4s linear;
+
+#nav-row {
+    position: fixed;
+    width: 100%;
+    background-color: #FFF;
+    height: $nav-height;
+    line-height: $nav-height;
+    transition: $scroll-transition;
+
+    &.scrolled {
+        background-color: rgba(255,255,255,0.7);
+        transition: $scroll-transition;
+        height: $nav-height-scrolled;
+        line-height: $nav-height-scrolled;
+    }
+
+    nav {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 1.8em;
+
+        a, a:visited {
+            color: black;
+            text-decoration: none;
+            transition: $hover-link-transition;
+
+            &:hover {
+                color: $hover-blue;
+                transition: $hover-link-transition;
+                text-decoration: inherit;
+            }
+        }
+
+        #nav-links {
+            float: right;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin-left: 20px;
+            }
+        }
+    }
+}

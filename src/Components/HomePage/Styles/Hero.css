@@ -1,0 +1,29 @@
+#hero {
+  height: 850px;
+  border-bottom: 2px solid white;
+  background: url("../../../Static/hero.jpg");
+  background-attachment: fixed;
+  background-size: auto 850px;
+  padding-top: 250px; }
+  #hero #banner {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ADD8E6;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 10px; }
+    #hero #banner h1 {
+      font-size: 5em;
+      margin-bottom: 20px; }
+    #hero #banner h2 {
+      font-size: 3em; }
+    #hero #banner h1, #hero #banner h2 {
+      font-weight: bold; }
+    #hero #banner hr {
+      border-color: #ADD8E6;
+      border-width: 2px;
+      max-width: 120px; }
+    #hero #banner .skills {
+      color: #FFA500;
+      font-size: 1.5em;
+      margin: 20px 0; }

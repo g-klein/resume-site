@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { AppContainer } from './Containers';
+import { App } from './Components';
 import registerServiceWorker from './registerServiceWorker';
+import {BrowserRouter} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
-ReactDOM.render(<AppContainer />, document.getElementById('root'));
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+    , document.getElementById('root'));
 registerServiceWorker();

@@ -1,0 +1,30 @@
+#nav-row {
+  position: fixed;
+  width: 100%;
+  background-color: #FFF;
+  height: 45px;
+  line-height: 45px;
+  transition: all 0.4s linear; }
+  #nav-row.scrolled {
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.4s linear;
+    height: 40px;
+    line-height: 40px; }
+  #nav-row nav {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.8em; }
+    #nav-row nav a, #nav-row nav a:visited {
+      color: black;
+      text-decoration: none;
+      transition: color 0.4s ease; }
+      #nav-row nav a:hover, #nav-row nav a:visited:hover {
+        color: #ADD8E6;
+        transition: color 0.4s ease;
+        text-decoration: inherit; }
+    #nav-row nav #nav-links {
+      float: right;
+      list-style-type: none; }
+      #nav-row nav #nav-links li {
+        display: inline-block;
+        margin-left: 20px; }

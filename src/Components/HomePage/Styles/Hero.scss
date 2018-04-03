@@ -1,0 +1,45 @@
+$text-blue: #ADD8E6;
+$skill-text-orange: #FFA500;
+
+#hero {
+    height: 850px;
+    border-bottom: 2px solid white;
+    background: url("../../../Static/hero.jpg");
+    background-attachment: fixed;
+    background-size: auto 850px;
+    padding-top: 250px;
+
+    #banner {
+        width: 100%;
+        background-color: rgba(0,0,0,0.8);
+        color: $text-blue;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding: 10px;
+
+        h1 {
+            font-size: 5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+
+        h1,h2 {            
+            font-weight: bold;
+        }
+
+        hr {
+            border-color: $text-blue;
+            border-width: 2px;
+            max-width: 120px;
+        }
+
+        .skills {
+            color: $skill-text-orange;
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+    }
+}
