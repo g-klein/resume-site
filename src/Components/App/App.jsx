@@ -6,7 +6,7 @@ import { HomePage, ResumePage, PageNotFound } from '../';
 export class App extends Component {
   render() {
     return (
-        <div id="app" className="container">
+        <div id="app">
           <Switch id="app">
             <Route exact path='/' component={HomePage} />
             <Route path='/resume' component={ResumePage} />
