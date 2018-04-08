@@ -1,0 +1,130 @@
+#resume{
+    width:920px;
+    margin: 26px auto 50px auto;
+    padding-bottom:50px;
+    
+	font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 13px;
+    color: #40484f;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+    text-align: left;
+
+    h1{
+        font-size: 2em;
+    }
+    
+    h2{
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    
+    h3{
+        font-size: 1em;
+    }
+
+    h1, h2, h3 {
+        font-weight:100;
+        margin: 0px;
+    }
+
+    section{
+        margin-top:25px;
+
+        > header {
+            border-bottom: solid 1px rgb(220,220,222);
+            font-weight:bolder;
+            color:#ff6d1f;
+        }
+    }
+
+    ul.links, ul.skills {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 14px 0 0;
+        }
+    }
+
+    .links {
+        margin: 10px 0 0 0;
+        padding: 0;
+
+        a, a:visited {
+            color: -webkit-link;
+            text-decoration: underline;
+        }
+
+        i {
+            padding-right: 6px;
+        }
+    }
+
+    .skills {
+        margin-top: 10px;
+
+        li {
+            display: inline-block;
+            background-color: rgb(200,220,255);
+            padding: 3px;
+            margin: 3px;
+        }
+    }
+
+    .past-experience-item {
+        margin-top: 15px;
+
+        i {
+            width: 20px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        > ul {
+            overflow: hidden;
+            max-height: 300px;
+            border-left: solid 1px rgb(220,220,222);
+            transition: max-height 0.2s;
+        }
+
+        &.collapsed > ul {
+            max-height: 0px;
+            transition: max-height 0.2s;
+        }
+        
+        .title, .company, .times {
+            font-size: 1.3em;
+        }
+
+        .title {
+            font-weight: bold;
+            padding-right: 10px;
+        }
+
+        .company {
+            padding-left: 10px;
+            border-left: 1px solid black;
+            font-style: italic;
+            color: rgb(120,120,120);
+        }
+
+        .times { 
+            float: right;
+        }
+
+        .education {
+            padding: 5px 0 0 40px;
+
+            .education-item {
+                margin: 0;
+            }
+        }
+    }    
+
+    .courses, .hobbies {
+        margin-top: 10px;
+    }
+}

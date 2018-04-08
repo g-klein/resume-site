@@ -9,7 +9,7 @@ import { Footer } from './Footer.jsx';
 export class HomePage extends Component {
     render() {
         return(
-            <div>
+            <div id="home">
                 <Navigation />
                 <Hero />
                 <LinkCards />

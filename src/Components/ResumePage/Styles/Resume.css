@@ -1,0 +1,80 @@
+#resume {
+  width: 920px;
+  margin: 26px auto 50px auto;
+  padding-bottom: 50px;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: left; }
+  #resume h1 {
+    font-size: 2em; }
+  #resume h2 {
+    font-size: 1.3em;
+    line-height: 1.5em; }
+  #resume h3 {
+    font-size: 1em; }
+  #resume h1, #resume h2, #resume h3 {
+    font-weight: 100;
+    margin: 0px; }
+  #resume section {
+    margin-top: 25px; }
+    #resume section > header {
+      border-bottom: solid 1px #dcdcde;
+      font-weight: bolder;
+      color: #ff6d1f; }
+  #resume ul.links, #resume ul.skills {
+    list-style-type: none;
+    padding: 0; }
+    #resume ul.links li, #resume ul.skills li {
+      display: inline-block;
+      margin: 0 14px 0 0; }
+  #resume .links {
+    margin: 10px 0 0 0;
+    padding: 0; }
+    #resume .links a, #resume .links a:visited {
+      color: -webkit-link;
+      text-decoration: underline; }
+    #resume .links i {
+      padding-right: 6px; }
+  #resume .skills {
+    margin-top: 10px; }
+    #resume .skills li {
+      display: inline-block;
+      background-color: #c8dcff;
+      padding: 3px;
+      margin: 3px; }
+  #resume .past-experience-item {
+    margin-top: 15px; }
+    #resume .past-experience-item i {
+      width: 20px;
+      display: inline-block;
+      cursor: pointer; }
+    #resume .past-experience-item > ul {
+      overflow: hidden;
+      max-height: 300px;
+      border-left: solid 1px #dcdcde;
+      transition: max-height 0.2s; }
+    #resume .past-experience-item.collapsed > ul {
+      max-height: 0px;
+      transition: max-height 0.2s; }
+    #resume .past-experience-item .title, #resume .past-experience-item .company, #resume .past-experience-item .times {
+      font-size: 1.3em; }
+    #resume .past-experience-item .title {
+      font-weight: bold;
+      padding-right: 10px; }
+    #resume .past-experience-item .company {
+      padding-left: 10px;
+      border-left: 1px solid black;
+      font-style: italic;
+      color: #787878; }
+    #resume .past-experience-item .times {
+      float: right; }
+    #resume .past-experience-item .education {
+      padding: 5px 0 0 40px; }
+      #resume .past-experience-item .education .education-item {
+        margin: 0; }
+  #resume .courses, #resume .hobbies {
+    margin-top: 10px; }

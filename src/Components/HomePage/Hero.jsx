@@ -8,7 +8,7 @@ export class Hero extends Component {
                 <h1>GREG KLEIN</h1>
                 <h2>Full Stack Engineer</h2>
                 <hr />
-                <p className="skills">C#, React, HTML 5, CSS/SCSS, Docker, Nginx, AWS, SQL, MongoDB</p>
+                <p className="skills">C#, React, HTML 5, CSS/SCSS, SQL, MongoDB, Docker, NGINX, AWS, Selenium</p>
             </div>
         </div>
     }
