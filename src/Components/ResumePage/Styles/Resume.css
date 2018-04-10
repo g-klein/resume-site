@@ -56,10 +56,10 @@
       overflow: hidden;
       max-height: 300px;
       border-left: solid 1px #dcdcde;
-      transition: max-height 0.2s; }
+      transition: max-height 0.5s; }
     #resume .past-experience-item.collapsed > ul {
       max-height: 0px;
-      transition: max-height 0.2s; }
+      transition: max-height 0.5s; }
     #resume .past-experience-item .title, #resume .past-experience-item .company, #resume .past-experience-item .times {
       font-size: 1.3em; }
     #resume .past-experience-item .title {

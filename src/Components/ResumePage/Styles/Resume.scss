@@ -87,12 +87,12 @@
             overflow: hidden;
             max-height: 300px;
             border-left: solid 1px rgb(220,220,222);
-            transition: max-height 0.2s;
+            transition: max-height 0.5s;
         }
 
         &.collapsed > ul {
             max-height: 0px;
-            transition: max-height 0.2s;
+            transition: max-height 0.5s;
         }
         
         .title, .company, .times {

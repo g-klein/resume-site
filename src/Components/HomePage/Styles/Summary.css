@@ -3,7 +3,8 @@
   margin: 60px auto;
   font-family: "Crimson Text", sans-serif;
   max-width: 585px;
-  position: relative; }
+  position: relative;
+  padding: 0 60px; }
   #summary h2 {
     text-decoration: underline;
     font-size: 50px; }

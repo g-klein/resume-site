@@ -29,7 +29,7 @@ export class Navigation extends Component {
         let navClassName = this.state.scrolled ? "scrolled" : "";
         return(            
             <Row id="nav-row" className={navClassName}>
-                <Col xsHidden sm={12}>
+                <Col xs={12}>
                     <nav>
                         <span id="home-link"><Link to="/">#HOME</Link></span>
                         <ul id="nav-links">
