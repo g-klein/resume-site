@@ -27,3 +27,9 @@
       color: #FFA500;
       font-size: 1.5em;
       margin: 20px 0; }
+
+@media (max-width: 800px) {
+  #hero {
+    background: url("../../../Static/hero-sm.jpg");
+    background-attachment: fixed;
+    background-size: auto 850px; } }

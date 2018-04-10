@@ -18,9 +18,11 @@ export class PastExperienceItem extends Component {
 
         return(
             <div className={itemClass}>
-                <span className="title">{caret} {this.props.title}</span>
-                <span className="company">{this.props.company}</span>
-                <span className="times">{this.props.times}</span>
+                <div className="past-experience-header">
+                    <span className="title">{caret} {this.props.title}</span>
+                    <span className="company">{this.props.company}</span>
+                    <span className="times">{this.props.times}</span>
+                </div>
                 {this.props.children}
             </div>
         )

@@ -2,6 +2,8 @@
   width: 920px;
   margin: 26px auto 50px auto;
   padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   font-size: 13px;
   color: #40484f;
@@ -19,6 +21,8 @@
   #resume h1, #resume h2, #resume h3 {
     font-weight: 100;
     margin: 0px; }
+  #resume .past-experience-header {
+    display: block; }
   #resume section {
     margin-top: 25px; }
     #resume section > header {
@@ -30,7 +34,7 @@
     padding: 0; }
     #resume ul.links li, #resume ul.skills li {
       display: inline-block;
-      margin: 0 14px 0 0; }
+      margin: 3px 14px 0 0; }
   #resume .links {
     margin: 10px 0 0 0;
     padding: 0; }
@@ -44,8 +48,7 @@
     #resume .skills li {
       display: inline-block;
       background-color: #c8dcff;
-      padding: 3px;
-      margin: 3px; }
+      padding: 3px; }
   #resume .past-experience-item {
     margin-top: 15px; }
     #resume .past-experience-item i {
@@ -56,10 +59,10 @@
       overflow: hidden;
       max-height: 300px;
       border-left: solid 1px #dcdcde;
-      transition: max-height 0.2s; }
+      transition: max-height 0.5s; }
     #resume .past-experience-item.collapsed > ul {
       max-height: 0px;
-      transition: max-height 0.2s; }
+      transition: max-height 0.5s; }
     #resume .past-experience-item .title, #resume .past-experience-item .company, #resume .past-experience-item .times {
       font-size: 1.3em; }
     #resume .past-experience-item .title {
@@ -78,3 +81,11 @@
         margin: 0; }
   #resume .courses, #resume .hobbies {
     margin-top: 10px; }
+
+@media (max-width: 900px) {
+  #resume {
+    width: 100%; } }
+
+@media (max-width: 650px) {
+  #resume {
+    font-size: 8px; } }

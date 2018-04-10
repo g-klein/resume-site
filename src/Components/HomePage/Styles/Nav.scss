@@ -11,6 +11,7 @@ $scroll-transition: all 0.4s linear;
     height: $nav-height;
     line-height: $nav-height;
     transition: $scroll-transition;
+    margin: 0;
 
     &.scrolled {
         background-color: rgba(255,255,255,0.7);
