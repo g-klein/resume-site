@@ -15,10 +15,12 @@ export class ResumePage extends Component {
                     <ul className="links">
                         <li><i className="fa fa-external-link" /><a href="http://www.gklein.online" target="_blank" rel="noopener noreferrer">http://www.gklein.online</a></li>
                         <li><i className="fa fa-envelope-o left-space" /><a href="mailto:gregmklein@gmail.com">gregmklein@gmail.com</a></li>
+                        <br />
+                        <li><i className="fa fa-download left-space" /><a href="mailto:gregmklein@gmail.com">Download as PDF</a></li>
                     </ul>
                 </section>
                 <ResumeSection header="SKILLS">
-                    <ResumeSkills skills={["C#", "React", "HTML 5", "CSS/SCSS", "SQL", "MongoDB", "Docker", "NGINX", "AWS", "Selenium"]}/>
+                    <ResumeSkills skills={["C#", "React", "Redux", "HTML 5", "CSS/SCSS", "SQL", "MongoDB", "Docker", "NGINX", "AWS", "Selenium"]}/>
                 </ResumeSection>
                 <ResumeSection header="WORK EXPERIENCE">
                     <PastExperienceItem title="Web Developer" company="Go Ahead Tours, Cambridge, MA" times="Oct 2016 - Present" collapsible>
@@ -31,7 +33,12 @@ export class ResumePage extends Component {
                                     <li>Manage complex application state using Redux</li>
                                 </ul>
                             </li>
-                            <li>Implement and maintain backend REST microservices using .NET core</li>
+                            <li>Implement and maintain backend microservices using .NET core
+                                <ul>
+                                    <li>Implement REST APIs consumed by multiple teams</li>
+                                    <li>Modify existing APIs to support new features and requirements</li>
+                                </ul>
+                            </li>
                             <li>Build tools to assist with data migrations from legacy systems</li>
                         </ul>
                     </PastExperienceItem>
