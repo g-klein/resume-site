@@ -3,6 +3,7 @@ import { ResumeSection } from './ResumeSection.jsx';
 import { ResumeSkills } from './ResumeSkills.jsx';
 import { PastExperienceItem } from './PastExperienceItem.jsx';
 import './Styles/Resume.css';
+import Resume from "../../Static/Resume.pdf";
 
 export class ResumePage extends Component {
     render() {
@@ -16,7 +17,7 @@ export class ResumePage extends Component {
                         <li><i className="fa fa-external-link" /><a href="http://www.gklein.online" target="_blank" rel="noopener noreferrer">http://www.gklein.online</a></li>
                         <li><i className="fa fa-envelope-o left-space" /><a href="mailto:gregmklein@gmail.com">gregmklein@gmail.com</a></li>
                         <br />
-                        <li><i className="fa fa-download left-space" /><a href="mailto:gregmklein@gmail.com">Download as PDF</a></li>
+                        <li><i className="fa fa-download left-space" /><a href={Resume} target="_blank">Download as PDF</a></li>
                     </ul>
                 </section>
                 <ResumeSection header="SKILLS">
@@ -28,7 +29,7 @@ export class ResumePage extends Component {
                             <li>Write and maintain full stack customer facing web applications in an agile environment</li>
                             <li>Build front-end applications using React
                                 <ul>
-                                    <li>Implement fully responsive designs with bootstrap</li>
+                                    <li>Implement fully responsive designs with bootstrap and custom SCSS</li>
                                     <li>Interface with backend services</li>
                                     <li>Manage complex application state using Redux</li>
                                 </ul>
@@ -44,7 +45,7 @@ export class ResumePage extends Component {
                     </PastExperienceItem>
                     <PastExperienceItem title="Senior Automation Engineer" company="Go Ahead Tours, Cambridge, MA" times="Oct 2013 - Oct 2016" collapsible>
                         <ul>
-                            <li>Implemented and maintained full suite of automated integration tests for web application and internal CRM
+                            <li>Implemented and maintained full suite of automated tests for web application and internal CRM
                                 <ul>
                                     <li>Tests were written in C# using SpecFlow framework</li>
                                 </ul>
@@ -68,8 +69,7 @@ export class ResumePage extends Component {
                             </li>
                             <li>QA Automation
                                 <ul>
-                                    <li>Helped to build out QA Automation framework for testing complex code components, such as upload processing, dynamic image rendering, and content platform.</li>
-                                    <li>Developed automation for testing areas of ownership. Gained experience with writing system tests, integration tests, web service testing, UI automation and User Acceptance Tests.</li>
+                                    <li>Gained experience with writing system tests, integration tests, web service testing, UI automation and User Acceptance Tests</li>
                                     <li>Acted as the primary automation resource for my team</li>
                                 </ul>
                             </li>
@@ -104,7 +104,7 @@ export class ResumePage extends Component {
                     <p className="courses">Introduction to Computer Science; Data Structures and Algorithms; Web Design; Computer Graphics and Advanced Computer Graphics; Computer Music; Game Design; Computer Organization.</p>
                 </ResumeSection>
                 <ResumeSection header="HOBBIES">
-                    <p className="hobbies">Hiking, Game Dev, Outdoor Photography</p>
+                    <p className="hobbies">Hiking, Video Game Development, Outdoor Photography</p>
                 </ResumeSection>
             </div>
         )
