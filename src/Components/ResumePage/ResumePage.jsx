@@ -63,8 +63,8 @@ export class ResumePage extends Component {
                         <ul>
                             <li>QA support for project execution
                                 <ul>
-                                    <li>Develop test plans to support development projects</li>
-                                    <li>Coordinate with other QA teams to ensure other domain experts have adequate testing</li>
+                                    <li>Developed test plans to support development projects</li>
+                                    <li>Coordinated with other QA teams to ensure other domain experts have adequate testing</li>
                                 </ul>
                             </li>
                             <li>QA Automation
