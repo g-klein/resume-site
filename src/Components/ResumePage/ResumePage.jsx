@@ -25,22 +25,22 @@ export class ResumePage extends Component {
                 </ResumeSection>
                 <ResumeSection header="WORK EXPERIENCE">
                     <PastExperienceItem title="Web Developer" company="Go Ahead Tours, Cambridge, MA" times="Oct 2016 - Present" collapsible>
-                        <ul>
+                        <ul>                            
                             <li>Write and maintain full stack customer facing web applications in an agile environment</li>
-                            <li>Build front-end applications using React
+                            <li>Build front-end applications using React and Redux for state management
                                 <ul>
+                                    <li>Build features such as allowing customers to write online product reviews, view and edit wishlists, and purchase product upsells</li>
                                     <li>Implement fully responsive designs with bootstrap and custom SCSS</li>
-                                    <li>Interface with backend services</li>
-                                    <li>Manage complex application state using Redux</li>
+                                    <li>Interface with backend REST microservices using Axios</li>
                                 </ul>
                             </li>
                             <li>Implement and maintain backend microservices using .NET core
                                 <ul>
-                                    <li>Implement REST APIs consumed by multiple teams</li>
-                                    <li>Modify existing APIs to support new features and requirements</li>
+                                    <li>Use ORMs such as Dapper and Entity Framework for accessing SQL databases</li>
+                                    <li>Use modern tools such as DI/IoC containers and unit testing to write clean maintainable code</li>
                                 </ul>
                             </li>
-                            <li>Build tools to assist with data migrations from legacy systems</li>
+                            <li>Build CLI tools to assist with migrating data out of legacy SQL databases</li>
                         </ul>
                     </PastExperienceItem>
                     <PastExperienceItem title="Senior Automation Engineer" company="Go Ahead Tours, Cambridge, MA" times="Oct 2013 - Oct 2016" collapsible>
