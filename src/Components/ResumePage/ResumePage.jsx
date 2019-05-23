@@ -12,7 +12,6 @@ export class ResumePage extends Component {
                 <section>
                     <h1>Greg Klein</h1>
                     <h2>Full Stack Engineer</h2>
-                    <h3>67 Farragut Avenue, Somerville, MA 02144</h3>
                     <ul className="links">
                         <li><i className="fa fa-external-link" /><a href="http://www.gklein.online" target="_blank" rel="noopener noreferrer">http://www.gklein.online</a></li>
                         <li><i className="fa fa-envelope-o left-space" /><a href="mailto:gregmklein@gmail.com">gregmklein@gmail.com</a></li>
@@ -24,17 +23,27 @@ export class ResumePage extends Component {
                     <ResumeSkills skills={["C#", "React", "Redux", "HTML 5", "CSS/SCSS", "SQL", "MongoDB", "Docker", "NGINX", "AWS", "Selenium"]}/>
                 </ResumeSection>
                 <ResumeSection header="WORK EXPERIENCE">
-                    <PastExperienceItem title="Web Developer" company="Go Ahead Tours, Cambridge, MA" times="Oct 2016 - Present" collapsible>
+                    <PastExperienceItem title="Software Developer III" company="NetSuite Oracle, Austin, TX" times="July 2018 – Present" collapsible>
                         <ul>                            
-                            <li>Write and maintain full stack customer facing web applications in an agile environment</li>
-                            <li>Build front-end applications using React and Redux for state management
+                            <li>Acted as lead developer on a project to implement an account lifecycle management tool used by NetSuite account management organization
                                 <ul>
-                                    <li>Build features such as allowing customers to write online product reviews, view and edit wishlists, and purchase product upsells</li>
-                                    <li>Implement fully responsive designs with bootstrap and custom SCSS</li>
-                                    <li>Interface with backend REST microservices using Axios</li>
+                                    <li>Worked on all aspects of the application development, from requirements gathering to implementation, and through launch</li>
+                                    <li>Implemented fully responsive designs with bootstrap and custom SCSS in React</li>
+                                    <li>Implemented REST services to interface with NetSuite database</li>
                                 </ul>
                             </li>
-                            <li>Implement and maintain backend microservices using .NET core
+                        </ul>
+                    </PastExperienceItem>
+                    <PastExperienceItem title="Web Developer" company="Go Ahead Tours, Cambridge, MA" times="Oct 2016 - May 2018" collapsible>
+                        <ul>                            
+                            <li>Wrpte and maintained full stack customer facing web applications in an agile environment</li>
+                            <li>Worked on a team to build a new customer account platform from the ground up
+                                <ul>
+                                    <li>Built features such as allowing customers to write online product reviews, view and edit wishlists, and purchase product upsells</li>
+                                    <li>Manage complex application state using Redux</li>
+                                </ul>
+                            </li>
+                            <li>Implemented and maintained backend microservices using .NET core
                                 <ul>
                                     <li>Use ORMs such as Dapper and Entity Framework for accessing SQL databases</li>
                                     <li>Use modern tools such as DI/IoC containers and unit testing to write clean maintainable code</li>

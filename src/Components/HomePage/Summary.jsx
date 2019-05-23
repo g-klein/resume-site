@@ -7,7 +7,7 @@ export class Summary extends Component {
             <div className="summary-outer">
                 <div id="summary">
                     <h2>Summary</h2>
-                    <p>Full stack engineer looking to relocate to Austin, TX. Focused on delivering scalable and maintainable code.  Advocate for software craftsmanship and SOLID principles.</p>
+                    <p>Full stack engineer living in Austin, TX. Focused on delivering scalable and maintainable code.  Advocate for software craftsmanship and SOLID principles.</p>
                     <p className="backdrop" dangerouslySetInnerHTML={{__html: codeBlock}}>
                     </p>
                 </div>

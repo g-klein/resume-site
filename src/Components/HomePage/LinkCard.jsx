@@ -7,9 +7,9 @@ export class LinkCard extends Component {
     }
 
     componentDidMount(){
-        setInterval(() => {
+        /*setInterval(() => {
             this.setState({lit: !this.state.lit});
-        }, 1000);
+        }, 1000);*/
     }
 
     render() {

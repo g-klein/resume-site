@@ -1,23 +1,20 @@
 #hero {
-  height: 850px;
+  height: 550px;
   border-bottom: 2px solid white;
   background: url("../../../Static/hero.jpg");
   background-attachment: fixed;
   background-size: auto 850px;
-  padding-top: 250px; }
+  padding-top: 150px; }
   #hero #banner {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #ADD8E6;
     font-family: "Lato", sans-serif;
     text-align: center;
-    padding: 10px; }
-    #hero #banner h1 {
-      font-size: 5em;
-      margin-bottom: 20px; }
+    padding: 10px;
+    position: relative; }
     #hero #banner h2 {
-      font-size: 3em; }
-    #hero #banner h1, #hero #banner h2 {
+      font-size: 3em;
       font-weight: bold; }
     #hero #banner hr {
       border-color: #ADD8E6;
@@ -27,6 +24,35 @@
       color: #FFA500;
       font-size: 1.5em;
       margin: 20px 0; }
+    #hero #banner * {
+      position: relative; }
+
+@keyframes svgAnim {
+  0% {
+    filter: opacity(0%); }
+  100% {
+    filter: opacity(100%); } }
+    #hero #banner svg {
+      display: block;
+      z-index: 100;
+      position: relative;
+      margin: auto;
+      animation-name: svgAnim;
+      animation-duration: 1s;
+      animation-timing-function: ease; }
+      #hero #banner svg .box {
+        fill: transparent; }
+      #hero #banner svg .st1, #hero #banner svg .box, #hero #banner svg .code {
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-miterlimit: 10; }
+      #hero #banner svg .st1 {
+        fill: transparent;
+        stroke: #bbddee; }
+      #hero #banner svg .code, #hero #banner svg .box {
+        fill: transparent;
+        stroke: orange;
+        z-index: 1000; }
 
 @media (max-width: 800px) {
   #hero {

@@ -7,6 +7,7 @@ $orange : #FFA500;
     margin-right: auto;
     text-align: center;
     padding-bottom: 65px;
+    
 
     > div {
         padding: 0 35px;
@@ -19,7 +20,7 @@ $orange : #FFA500;
         padding: 20px;
         margin-top: 65px;
         
-        background-color: $lightblue;
+        //background-color: $lightblue;
         border-radius: 40px;
         box-shadow:0 0 20px $lightblue;
 
@@ -27,8 +28,8 @@ $orange : #FFA500;
         font-size: 24px;
         font-weight: bold;
         transition:all 1s linear;
-        text-decoration: none;
-        color: black;
+        text-decoration: underline;
+        color: $lightblue;
 
         i {
             font-size: 70px;
@@ -36,18 +37,33 @@ $orange : #FFA500;
         }
 
         &.lit {
-            box-shadow:0 0 60px $lightblue;
-            transition:all 1s linear;
+            box-shadow:0 0 35px $lightblue;
+            transition: all 1s ease;
         }
 
         &:hover { 
-            background-color:$orange;
-            box-shadow:0 0 20px $orange;
-            transition:all 0.2s ease;
+            color: $orange;
+            box-shadow: 0 0 20px $orange;
+            transition: all 0.2s ease;
         }
+    }
+}
+
+@keyframes link-card-scale-in {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
     }
 }
 
 .link-card-container-outer {
     border-bottom: 2px solid white;
+    transform: scaleY(0);
+
+    animation-name: link-card-scale-in;
+    animation-duration: .5s;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
 }

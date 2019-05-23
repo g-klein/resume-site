@@ -2,31 +2,24 @@ $text-blue: #ADD8E6;
 $skill-text-orange: #FFA500;
 
 #hero {
-    height: 850px;
+    height: 550px;
     border-bottom: 2px solid white;
     background: url("../../../Static/hero.jpg");
     background-attachment: fixed;
     background-size: auto 850px;
-    padding-top: 250px;
+    padding-top: 150px;
 
     #banner {
         width: 100%;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.9);
         color: $text-blue;
         font-family: "Lato", sans-serif;
         text-align: center;
         padding: 10px;
-
-        h1 {
-            font-size: 5em;
-            margin-bottom: 20px;
-        }
-
+        position: relative;
+        
         h2 {
             font-size: 3em;
-        }
-
-        h1,h2 {            
             font-weight: bold;
         }
 
@@ -40,6 +33,50 @@ $skill-text-orange: #FFA500;
             color: $skill-text-orange;
             font-size: 1.5em;
             margin: 20px 0;
+        }
+
+        * {
+            position: relative;
+        }
+
+        @keyframes svgAnim {
+            0% {
+                filter: opacity(0%);
+            }
+            100% {
+                filter: opacity(100%);
+            }
+        }
+
+        svg {
+            display: block;
+            z-index: 100;
+            position: relative;
+            margin: auto;
+            animation-name: svgAnim;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+
+            .box {
+                fill: transparent;
+            }
+
+            .st1,.box,.code{
+                stroke-width: 3;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+            }
+        
+            .st1 {
+                fill: transparent;
+                stroke: #bbddee;
+            }
+
+            .code,.box {
+                fill: transparent;
+                stroke: orange;
+                z-index: 1000;
+            }
         }
     }
 }
