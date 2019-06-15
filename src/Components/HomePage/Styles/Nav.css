@@ -1,4 +1,4 @@
-#nav-row {
+#nav-row div {
   position: fixed;
   width: 100%;
   background-color: #FFF;
@@ -6,26 +6,27 @@
   line-height: 45px;
   transition: all 0.4s linear;
   margin: 0; }
-  #nav-row.scrolled {
+  #nav-row div.scrolled {
     background-color: rgba(255, 255, 255, 0.7);
     transition: all 0.4s linear;
     height: 40px;
     line-height: 40px; }
-  #nav-row nav {
+  #nav-row div nav {
     font-family: "Lato", sans-serif;
     font-weight: bold;
-    font-size: 1.8em; }
-    #nav-row nav a, #nav-row nav a:visited {
+    font-size: 1.8em;
+    padding: 0px 15px; }
+    #nav-row div nav a, #nav-row div nav a:visited {
       color: black;
       text-decoration: none;
       transition: color 0.4s ease; }
-      #nav-row nav a:hover, #nav-row nav a:visited:hover {
+      #nav-row div nav a:hover, #nav-row div nav a:visited:hover {
         color: #ADD8E6;
         transition: color 0.4s ease;
         text-decoration: inherit; }
-    #nav-row nav #nav-links {
+    #nav-row div nav #nav-links {
       float: right;
       list-style-type: none; }
-      #nav-row nav #nav-links li {
+      #nav-row div nav #nav-links li {
         display: inline-block;
         margin-left: 20px; }

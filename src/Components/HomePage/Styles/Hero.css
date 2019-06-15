@@ -13,6 +13,8 @@
     text-align: center;
     padding: 10px;
     position: relative; }
+    #hero #banner #mobile-name {
+      display: block; }
     #hero #banner h2 {
       font-size: 3em;
       font-weight: bold; }
@@ -33,13 +35,14 @@
   100% {
     filter: opacity(100%); } }
     #hero #banner svg {
-      display: block;
       z-index: 100;
       position: relative;
       margin: auto;
       animation-name: svgAnim;
       animation-duration: 1s;
-      animation-timing-function: ease; }
+      animation-timing-function: ease;
+      width: 100%;
+      height: 170px; }
       #hero #banner svg .box {
         fill: transparent; }
       #hero #banner svg .st1, #hero #banner svg .box, #hero #banner svg .code {
@@ -58,4 +61,10 @@
   #hero {
     background: url("../../../Static/hero-sm.jpg");
     background-attachment: fixed;
-    background-size: auto 850px; } }
+    background-size: auto 850px;
+    height: auto;
+    padding-top: 10px; }
+    #hero #mobile-name {
+      display: block; }
+    #hero svg {
+      display: none; } }

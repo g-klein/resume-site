@@ -17,6 +17,10 @@ $skill-text-orange: #FFA500;
         text-align: center;
         padding: 10px;
         position: relative;
+
+        #mobile-name {
+            display: block;
+        }
         
         h2 {
             font-size: 3em;
@@ -49,13 +53,14 @@ $skill-text-orange: #FFA500;
         }
 
         svg {
-            display: block;
             z-index: 100;
             position: relative;
             margin: auto;
             animation-name: svgAnim;
             animation-duration: 1s;
             animation-timing-function: ease;
+            width: 100%;
+            height: 170px;
 
             .box {
                 fill: transparent;
@@ -86,5 +91,15 @@ $skill-text-orange: #FFA500;
         background: url("../../../Static/hero-sm.jpg");
         background-attachment: fixed;
         background-size: auto 850px;
+        height: auto;
+        padding-top: 10px;
+
+        #mobile-name {
+            display: block;
+        }
+
+        svg {
+            display: none;
+        }
     }
 }
